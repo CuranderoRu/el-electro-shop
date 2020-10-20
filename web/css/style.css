@@ -181,6 +181,11 @@ body {
   align-items: center;
   margin: 0 12px;
   padding: 0;
+  position: relative;
+}
+.page-header-nav-item:hover .page-header-nav-item-submenu {
+  visibility: visible;
+  transition: all 1s ease-out 0.5s;
 }
 .page-header-nav-item-link {
   font-family: "Lato-Regular";
@@ -195,6 +200,21 @@ body {
 }
 .page-header-nav-item-link:active {
   color: red;
+}
+.page-header-nav-item-submenu {
+  min-width: 150px;
+  background: rgba(255, 255, 255, 0.99);
+  border: 1px solid #f7f7f7;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  top: 18px;
+  left: -3px;
+  visibility: hidden;
+}
+.page-header-nav-item-submenu-item {
+  margin: 25px;
 }
 .page-header-cart {
   display: flex;
