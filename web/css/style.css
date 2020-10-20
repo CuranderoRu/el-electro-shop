@@ -224,6 +224,8 @@ body {
   background: transparent;
   border: none;
   font-family: "Arial";
+  position: relative;
+  min-width: 150px;
 }
 .page-header-cart:active,
 .page-header-cart:focus {
@@ -240,6 +242,25 @@ body {
 }
 .page-header-cart:hover .page-header-cart-svg {
   fill: orange;
+}
+.page-header-cart:hover .page-header-cart-actions {
+  visibility: visible;
+}
+.page-header-cart-actions {
+  min-width: 150px;
+  background: rgba(255, 255, 255, 0.99);
+  border: 1px solid #f7f7f7;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  top: 26px;
+  left: -3px;
+  visibility: hidden;
+}
+.page-header-cart-actions li {
+  margin: 10px;
+  text-align: left;
 }
 .page-header-search {
   margin: 5px 0 0 26px;
